@@ -1,0 +1,1 @@
+void wcstombs_and_strncat_main();

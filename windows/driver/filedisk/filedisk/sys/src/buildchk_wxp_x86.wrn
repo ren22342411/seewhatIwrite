@@ -1,0 +1,4 @@
+1>warnings in directory c:\allcode\filedisk\sys\src
+1>c:\allcode\filedisk\sys\src\filedisk.c(303) : warning C4996: 'ExAllocatePool': was declared deprecated
+1>c:\allcode\filedisk\sys\src\filedisk.c(790) : warning C4996: 'ExAllocatePool': was declared deprecated
+1>c:\allcode\filedisk\sys\src\filedisk.c(1313) : warning C4996: 'ExAllocatePool': was declared deprecated

@@ -1,0 +1,116 @@
+[Global]
+CurrentProject=filediskex.vpj
+[ActiveConfig]
+filediskex.vpj=,Debug|Win32
+[ProjectDates]
+filediskex.vcxproj=20101218114440421
+[TreeExpansion2]
+- filediskex.vcxproj
+  - exe
+    - exe\filedisk.cpp
+    - exe\filedisk.rc
+    - exe\MAKEFILE
+    - exe\sources
+  - inc
+    - inc\filedisk.h
+    - inc\filedisk_sys_exe_common.h
+    - inc\macro.h
+  - sys
+    - sys\filedisk.cpp
+    - sys\filedisk.rc
+    - sys\MAKEFILE
+    - sys\Sources
+  - dirs
+  - example.txt
+  - filedisk.reg
+  - install.txt
+  - readme.txt
+scroll:0
+[State]
+SCREEN: 1440 900 -420 173 923 652 0 0 M 0 0 0 0 930 545 0
+CWD: ..\FilediskEx
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\rxtypes.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.596 CL=20 LE=0 CX=20 CY=15 WI=5 BI=34 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\WinDDK\7600.16385.1\tools\sdv\osmodel\ndis\osmodel.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.158489 CL=1 LE=0 CX=1 CY=15 WI=5 BI=35 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\WinDDK\7600.16385.1\inc\api\ntsecapi.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.96783 CL=35 LE=0 CX=35 CY=15 WI=5 BI=36 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\Program Files\Microsoft SDKs\Windows\v7.0A\include\winternl.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.3504 CL=12 LE=0 CX=12 CY=18 WI=5 BI=37 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\Program Files\Microsoft Visual Studio 10.0\VC\INCLUDE\stdio.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.3377 CL=15 LE=0 CX=15 CY=14 WI=5 BI=38 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\ntstrsafe.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.457593 CL=58 LE=0 CX=58 CY=15 WI=5 BI=39 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\WinDDK\7600.16385.1\inc\api\strsafe.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.161951 CL=1 LE=0 CX=1 CY=11 WI=5 BI=40 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\wdm.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.330493 CL=1 LE=0 CX=1 CY=15 WI=5 BI=41 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="exe\filedisk.cpp"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.4531 CL=1 LE=0 CX=1 CY=5 WI=5 BI=42 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="sys\filedisk.cpp"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=4720 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.45904 CL=37 LE=0 CX=37 CY=21 WI=5 BI=45 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="inc\filedisk.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.2133 CL=40 LE=0 CX=40 CY=16 WI=5 BI=43 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="inc\filedisk_sys_exe_common.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=15925864 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.1377 CL=53 LE=0 CX=53 CY=13 WI=5 BI=44 HT=0 HN=0 HF=0 HC=4
+WINDOW: 100 145 720 381 -1 -1 N  WF=0 WT=6 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\rxtypes.h"
+VIEW: LN=.596 CL=20 LE=0 CX=20 CY=15 WI=314 BI=34 HT=0 HN=0 HF=0 HC=4
+WINDOW: 140 29 720 381 -1 -1 N  WF=0 WT=8 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\tools\sdv\osmodel\ndis\osmodel.c"
+VIEW: LN=.158489 CL=1 LE=0 CX=1 CY=15 WI=316 BI=35 HT=0 HN=0 HF=0 HC=4
+WINDOW: 160 58 720 381 -1 -1 N  WF=0 WT=9 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\inc\api\ntsecapi.h"
+VIEW: LN=.96783 CL=35 LE=0 CX=35 CY=15 WI=318 BI=36 HT=0 HN=0 HF=0 HC=4
+WINDOW: 120 0 720 381 -1 -1 N  WF=0 WT=7 ",,,"
+BUFFER: BN="\Program Files\Microsoft SDKs\Windows\v7.0A\include\winternl.h"
+VIEW: LN=.3504 CL=12 LE=0 CX=12 CY=18 WI=320 BI=37 HT=0 HN=0 HF=0 HC=4
+WINDOW: 180 87 720 381 -1 -1 N  WF=0 WT=10 ",,,"
+BUFFER: BN="\Program Files\Microsoft Visual Studio 10.0\VC\INCLUDE\stdio.h"
+VIEW: LN=.3377 CL=15 LE=0 CX=15 CY=14 WI=322 BI=38 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 720 381 -1 -1 N  WF=0 WT=11 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\ntstrsafe.h"
+VIEW: LN=.457593 CL=58 LE=0 CX=58 CY=15 WI=324 BI=39 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 29 720 381 -1 -1 N  WF=0 WT=12 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\inc\api\strsafe.h"
+VIEW: LN=.161951 CL=1 LE=0 CX=1 CY=11 WI=326 BI=40 HT=0 HN=0 HF=0 HC=4
+WINDOW: 80 116 720 381 -1 -1 N  WF=0 WT=5 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\wdm.h"
+VIEW: LN=.330493 CL=1 LE=0 CX=1 CY=15 WI=328 BI=41 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 720 381 -1 -1 N  WF=0 WT=1 ",,,"
+BUFFER: BN="exe\filedisk.cpp"
+VIEW: LN=.4531 CL=1 LE=0 CX=1 CY=5 WI=330 BI=42 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 29 720 381 -1 -1 N  WF=0 WT=2 ",,,"
+BUFFER: BN="sys\filedisk.cpp"
+VIEW: LN=.45904 CL=37 LE=0 CX=37 CY=21 WI=336 BI=45 HT=0 HN=0 HF=0 HC=4
+WINDOW: 40 58 720 381 -1 -1 N  WF=0 WT=3 ",,,"
+BUFFER: BN="inc\filedisk.h"
+VIEW: LN=.2133 CL=40 LE=0 CX=40 CY=16 WI=332 BI=43 HT=0 HN=0 HF=0 HC=4
+WINDOW: 60 87 720 381 -1 -1 M  WF=0 WT=4 ",,,"
+BUFFER: BN="inc\filedisk_sys_exe_common.h"
+VIEW: LN=.1308 CL=56 LE=0 CX=56 CY=12 WI=334 BI=44 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+\WinDDK\7600.16385.1\src\input\vserial\VSerial.h
+\WinDDK\7600.16385.1\inc\ddk\wdm.h
+\Program Files\Microsoft SDKs\Windows\v7.0A\include\winternl.h
+\WinDDK\7600.16385.1\tools\sdv\osmodel\ndis\osmodel.c
+\WinDDK\7600.16385.1\inc\api\ntsecapi.h
+inc\filedisk.h
+exe\filedisk.cpp
+sys\filedisk.cpp
+inc\filedisk_sys_exe_common.h
+DEBUG2: 0
+PROJECT_CACHE: 0
+TBCLASS: 0 0

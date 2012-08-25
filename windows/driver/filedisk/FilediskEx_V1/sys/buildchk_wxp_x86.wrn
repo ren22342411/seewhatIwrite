@@ -1,0 +1,4 @@
+1>warnings in directory c:\allcode\filediskex\sys\src
+1>c:\allcode\filediskex\sys\src\filedisk.cpp(53) : warning C4996: 'ExAllocatePool': was declared deprecated
+1>c:\allcode\filediskex\sys\src\filedisk.cpp(540) : warning C4996: 'ExAllocatePool': was declared deprecated
+1>c:\allcode\filediskex\sys\src\filedisk.cpp(1063) : warning C4996: 'ExAllocatePool': was declared deprecated

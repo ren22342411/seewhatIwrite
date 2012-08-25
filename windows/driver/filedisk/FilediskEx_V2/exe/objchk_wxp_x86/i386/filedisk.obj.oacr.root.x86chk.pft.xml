@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+<OACRDEFECTCOUNT>5</OACRDEFECTCOUNT>
+<OACRERRORCOUNT>0</OACRERRORCOUNT>
+<DEFECT _seq="1"><SFA><LINE>396</LINE><COLUMN>22</COLUMN><FILENAME>filedisk.cpp</FILENAME><FILEPATH>c:\allcode\filediskex\exe\</FILEPATH></SFA><DEFECTCODE>28719</DEFECTCODE><DESCRIPTION>Banned API Usage:  strcpy is a Banned API as listed in dontuse.h for security purposes.</DESCRIPTION><FUNCTION>main</FUNCTION><FUNCLINE>361</FUNCLINE><PATH/></DEFECT>
+<DEFECT _seq="2"><SFA><LINE>397</LINE><COLUMN>22</COLUMN><FILENAME>filedisk.cpp</FILENAME><FILEPATH>c:\allcode\filediskex\exe\</FILEPATH></SFA><DEFECTCODE>28719</DEFECTCODE><DESCRIPTION>Banned API Usage:  strcat is a Banned API as listed in dontuse.h for security purposes.</DESCRIPTION><FUNCTION>main</FUNCTION><FUNCLINE>361</FUNCLINE><PATH/></DEFECT>
+<DEFECT _seq="3"><SFA><LINE>402</LINE><COLUMN>22</COLUMN><FILENAME>filedisk.cpp</FILENAME><FILEPATH>c:\allcode\filediskex\exe\</FILEPATH></SFA><DEFECTCODE>28719</DEFECTCODE><DESCRIPTION>Banned API Usage:  strcpy is a Banned API as listed in dontuse.h for security purposes.</DESCRIPTION><FUNCTION>main</FUNCTION><FUNCLINE>361</FUNCLINE><PATH/></DEFECT>
+<DEFECT _seq="4"><SFA><LINE>408</LINE><COLUMN>18</COLUMN><FILENAME>filedisk.cpp</FILENAME><FILEPATH>c:\allcode\filediskex\exe\</FILEPATH></SFA><DEFECTCODE>28719</DEFECTCODE><DESCRIPTION>Banned API Usage:  strcpy is a Banned API as listed in dontuse.h for security purposes.</DESCRIPTION><FUNCTION>main</FUNCTION><FUNCLINE>361</FUNCLINE><PATH/></DEFECT>
+<DEFECT _seq="5"><SFA><LINE>409</LINE><COLUMN>18</COLUMN><FILENAME>filedisk.cpp</FILENAME><FILEPATH>c:\allcode\filediskex\exe\</FILEPATH></SFA><DEFECTCODE>28719</DEFECTCODE><DESCRIPTION>Banned API Usage:  strcat is a Banned API as listed in dontuse.h for security purposes.</DESCRIPTION><FUNCTION>main</FUNCTION><FUNCLINE>361</FUNCLINE><PATH/></DEFECT>
+</DEFECTS>

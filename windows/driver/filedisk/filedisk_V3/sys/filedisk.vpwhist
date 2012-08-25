@@ -1,0 +1,60 @@
+[Global]
+CurrentProject=filedisk.vpj
+[ActiveConfig]
+filedisk.vpj=,Debug|Win32
+[ProjectDates]
+filedisk.vcxproj=20101214074640929
+[TreeExpansion2]
+- filedisk.vcxproj
+  - inc\filedisk.h
+  - src\filedisk.c
+  - src\filedisk.rc
+  - src\MAKEFILE
+  - src\Sources
+scroll:0
+[State]
+SCREEN: 1440 900 0 150 923 652 0 0 M 0 0 0 0 930 544 0
+CWD: ..\..\filedisk V1\sys
+BUFFER: BN="\WinDDK\7600.16385.1\inc\api\ntddft.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=4976 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.370 CL=1 LE=0 CX=1 CY=17 WI=5 BI=55 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="src\filedisk.rc"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Windows Resource Fil	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=52 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="inc\filedisk.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=4976 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.1586 CL=1 LE=0 CX=1 CY=2 WI=5 BI=34 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\wdm.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.504484 CL=59 LE=0 CX=59 CY=5 WI=5 BI=36 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="src\filedisk.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=1053560 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.44382 CL=6 LE=0 CX=6 CY=26 WI=5 BI=35 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 29 692 304 -1 -1 N  WF=0 WT=2 ",,,"
+BUFFER: BN="inc\filedisk.h"
+VIEW: LN=.1586 CL=1 LE=0 CX=1 CY=2 WI=313 BI=34 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 720 382 -1 -1 N  WF=0 WT=3 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\wdm.h"
+VIEW: LN=.504484 CL=59 LE=0 CX=59 CY=5 WI=315 BI=36 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 29 720 380 -1 -1 N  WF=0 WT=4 ",,,"
+BUFFER: BN="src\filedisk.rc"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=363 BI=52 HT=0 HN=0 HF=0 HC=4
+WINDOW: 40 58 720 380 -1 -1 N  WF=0 WT=5 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\inc\api\ntddft.h"
+VIEW: LN=.370 CL=1 LE=0 CX=1 CY=17 WI=367 BI=55 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 692 304 -1 -1 M  WF=0 WT=1 ",,,"
+BUFFER: BN="src\filedisk.c"
+VIEW: LN=.16737 CL=63 LE=0 CX=63 CY=18 WI=317 BI=35 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+inc\filedisk.h
+\Program Files\Microsoft SDKs\Windows\v7.0A\include\WinIoCtl.h
+\WinDDK\7600.16385.1\inc\ddk\ntifs.h
+\WinDDK\7600.16385.1\Debuggers\winext\manifest\main.h
+\WinDDK\7600.16385.1\inc\ddk\mountmgr.h
+\WinDDK\7600.16385.1\inc\ddk\wdm.h
+src\filedisk.rc
+\WinDDK\7600.16385.1\inc\api\ntddft.h
+src\filedisk.c
+DEBUG2: 0
+PROJECT_CACHE: 0
+TBCLASS: 0 0

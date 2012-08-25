@@ -1,0 +1,48 @@
+[Global]
+CurrentProject=filedisk.vpj
+[ActiveConfig]
+filedisk.vpj=,Debug|Win32
+[ProjectDates]
+filedisk.vcxproj=20101214074640929
+[TreeExpansion2]
+- filedisk.vcxproj
+  - inc\filedisk.h
+  - src\filedisk.c
+  - src\filedisk.rc
+  - src\MAKEFILE
+  - src\Sources
+scroll:0
+[State]
+SCREEN: 1440 900 0 150 923 652 0 0 M 0 0 0 0 930 544 0
+CWD: ..\..\filedisk\sys
+BUFFER: BN="inc\filedisk.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.1586 CL=1 LE=0 CX=1 CY=2 WI=5 BI=35 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\wdm.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.504484 CL=59 LE=0 CX=59 CY=5 WI=5 BI=34 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="src\filedisk.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=4976 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.33541 CL=45 LE=12 CX=33 CY=5 WI=5 BI=52 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 29 692 304 -1 -1 N  WF=0 WT=2 ",,,"
+BUFFER: BN="inc\filedisk.h"
+VIEW: LN=.1586 CL=1 LE=0 CX=1 CY=2 WI=362 BI=35 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 720 382 -1 -1 N  WF=0 WT=3 ",,,"
+BUFFER: BN="\WinDDK\7600.16385.1\inc\ddk\wdm.h"
+VIEW: LN=.504484 CL=59 LE=0 CX=59 CY=5 WI=318 BI=34 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 692 304 -1 -1 M  WF=0 WT=1 ",,,"
+BUFFER: BN="src\filedisk.c"
+VIEW: LN=.33990 CL=43 LE=12 CX=31 CY=13 WI=316 BI=52 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+\Documents and Settings\renr2\My Documents\All\Code\renr2_view2_201011231705\SHNcatmerge\layered\LunMigration\krnl\iomanager\MigIoMgrUtil.cpp
+filedisk.sln
+inc\filedisk.h
+\Program Files\Microsoft SDKs\Windows\v7.0A\include\WinIoCtl.h
+\WinDDK\7600.16385.1\inc\ddk\ntifs.h
+\WinDDK\7600.16385.1\Debuggers\winext\manifest\main.h
+\WinDDK\7600.16385.1\inc\ddk\mountmgr.h
+src\filedisk.c
+\WinDDK\7600.16385.1\inc\ddk\wdm.h
+DEBUG2: 0
+PROJECT_CACHE: 0
+TBCLASS: 0 0

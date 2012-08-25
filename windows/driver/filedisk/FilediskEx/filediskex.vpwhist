@@ -1,0 +1,74 @@
+[Global]
+CurrentProject=filediskex.vpj
+[ActiveConfig]
+filediskex.vpj=,Debug|Win32
+[ProjectDates]
+filediskex.vcxproj=20101218114440421
+[TreeExpansion2]
+- filediskex.vcxproj
+  - exe
+    - exe\filedisk.cpp
+    - exe\filedisk.rc
+    - exe\MAKEFILE
+    - exe\sources
+  - inc
+    - inc\filedisk.h
+    - inc\filedisk_sys_exe_common.h
+    - inc\macro.h
+  - sys
+    - sys\filedisk.cpp
+    - sys\filedisk.rc
+    - sys\MAKEFILE
+    - sys\Sources
+  - dirs
+  - example.txt
+  - filedisk.reg
+  - install.txt
+  - readme.txt
+scroll:0
+[State]
+SCREEN: 1440 900 0 61 819 652 0 0 M 0 0 0 0 912 429 0
+CWD: ..\renr2_view2_armada_dev_latest
+BUFFER: BN="inc\filedisk.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.8926 CL=9 LE=0 CX=9 CY=18 WI=5 BI=62 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="\Program Files\Microsoft Visual Studio 10.0\VC\INCLUDE\comutil.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=45 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="exe\filedisk.cpp"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.5216 CL=1 LE=0 CX=1 CY=16 WI=5 BI=70 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="inc\filedisk_sys_exe_common.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=32 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.2213 CL=5 LE=0 CX=5 CY=17 WI=5 BI=44 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="sys\filedisk.cpp"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=864 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.2548 CL=1 LE=0 CX=1 CY=5 WI=5 BI=43 HT=0 HN=0 HF=0 HC=4
+WINDOW: 40 58 720 381 -1 -1 N  WF=0 WT=3 ",,,"
+BUFFER: BN="inc\filedisk.h"
+VIEW: LN=.8926 CL=9 LE=0 CX=9 CY=18 WI=490 BI=62 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 823 326 -1 -1 N  WF=0 WT=6 ",,,"
+BUFFER: BN="\Program Files\Microsoft Visual Studio 10.0\VC\INCLUDE\comutil.h"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=484 BI=45 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 720 381 -1 -1 N  WF=0 WT=1 ",,,"
+BUFFER: BN="exe\filedisk.cpp"
+VIEW: LN=.5216 CL=1 LE=0 CX=1 CY=16 WI=497 BI=70 HT=0 HN=0 HF=0 HC=4
+WINDOW: 60 87 720 381 -1 -1 N  WF=0 WT=4 ",,,"
+BUFFER: BN="inc\filedisk_sys_exe_common.h"
+VIEW: LN=.2213 CL=5 LE=0 CX=5 CY=17 WI=491 BI=44 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 29 720 381 -1 -1 M  WF=0 WT=2 ",,,"
+BUFFER: BN="sys\filedisk.cpp"
+VIEW: LN=.6216 CL=52 LE=0 CX=52 CY=12 WI=504 BI=43 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+\WinDDK\7600.16385.1\inc\api\ntsecapi.h
+\WinDDK\7600.16385.1\inc\ddk\ntddk.h
+inc\filedisk.h
+inc\filedisk_sys_exe_common.h
+sys\filedisk.rc
+exe\filedisk.rc
+exe\filedisk.cpp
+\WinDDK\7600.16385.1\inc\ddk\wdm.h
+sys\filedisk.cpp
+DEBUG2: 0
+PROJECT_CACHE: 0
+TBCLASS: 0 0

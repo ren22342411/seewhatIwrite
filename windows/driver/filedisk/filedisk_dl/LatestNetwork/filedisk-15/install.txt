@@ -1,0 +1,14 @@
+Copy the driver (filedisk.sys) to %systemroot%\system32\drivers\.
+
+Optionally edit filedisk.reg for automatic/manually start and
+number of devices.
+
+Import filedisk.reg to the Registry.
+
+Reboot. If running on the 64-bit version of Windows Vista press F8 and
+select "Disable enforce driver signing".
+
+Use the program filedisk.exe to mount/umount files, for an example
+of use see the file example.txt. If running on Windows Vista remember
+to right click and select "Run as administrator" when starting the
+command prompt.

@@ -1,0 +1,5 @@
+TARGETNAME=filedisk
+TARGETPATH=..\obj
+TARGETTYPE=DRIVER
+INCLUDES=..\inc;$(ATL_INC_PATH)\mfc42
+SOURCES=filedisk.c filedisk.rc

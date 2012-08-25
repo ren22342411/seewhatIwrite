@@ -1,0 +1,237 @@
+    if (DataDevObj->DeviceType != FILE_DEVICE_CD_ROM)
+    {
+        DataDevObjExt->union_special_dev_ext.data_dev_ext.read_only = mount_information->ReadOnly;
+    }
+
+    DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Length = mount_information->FileNameLength;
+    DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.MaximumLength = mount_information->FileNameLength;
+    DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer = (PCHAR)ExAllocatePool(NonPagedPool, mount_information->FileNameLength);
+
+    RtlCopyMemory(
+        DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer,
+        mount_information->FileName,
+        mount_information->FileNameLength
+        );
+
+    UNICODE_STRING ufile_name;
+
+    status = RtlAnsiStringToUnicodeString(
+        &ufile_name,
+        &DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name,
+        TRUE
+        );
+
+    if (!NT_SUCCESS(status))
+    {
+        InterlockedDecrement(&CtrlDevObjExt->union_special_dev_ext.ctrl_dev_ext.number_of_device);
+        if (DataDevObj)
+        {
+            FileDiskDeleteDevice(DataDevObj);            
+        }
+        ExFreePool(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer);
+        Irp->IoStatus.Status = status;
+        Irp->IoStatus.Information = 0;
+        return status;
+    }
+
+    OBJECT_ATTRIBUTES               object_attributes;
+
+    InitializeObjectAttributes(
+        &object_attributes,
+        &ufile_name,
+        OBJ_KERNEL_HANDLE | OBJ_CASE_INSENSITIVE, // OBJ_KERNEL_HANDLE - This flag is used for Buffered IO which will be handled within "Read" Dispatch function 
+        NULL,
+        NULL
+        );
+
+    FILE_END_OF_FILE_INFORMATION    file_eof;
+    FILE_BASIC_INFORMATION          file_basic;
+    FILE_STANDARD_INFORMATION       file_standard;
+    FILE_ALIGNMENT_INFORMATION      file_alignment;
+
+    status = ZwCreateFile(
+        &DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle,
+        DataDevObjExt->union_special_dev_ext.data_dev_ext.read_only ? GENERIC_READ : GENERIC_READ | GENERIC_WRITE,
+        &object_attributes,
+        &Irp->IoStatus,
+        NULL,
+        FILE_ATTRIBUTE_NORMAL,
+        DataDevObjExt->union_special_dev_ext.data_dev_ext.read_only ? FILE_SHARE_READ : 0,
+        FILE_OPEN,
+        FILE_NON_DIRECTORY_FILE |
+        FILE_RANDOM_ACCESS |
+        FILE_NO_INTERMEDIATE_BUFFERING |
+        FILE_SYNCHRONOUS_IO_NONALERT,
+        NULL,
+        0
+        );
+
+    if (status == STATUS_OBJECT_NAME_NOT_FOUND || status == STATUS_NO_SUCH_FILE)
+    {
+        if (DataDevObjExt->union_special_dev_ext.data_dev_ext.read_only || mount_information->FileSize.QuadPart == 0)
+        {
+            InterlockedDecrement(&CtrlDevObjExt->union_special_dev_ext.ctrl_dev_ext.number_of_device);
+
+            FileDiskDeleteDevice(DataDevObj);            
+            
+            ExFreePool(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer);
+            RtlFreeUnicodeString(&ufile_name);
+
+            Irp->IoStatus.Status = STATUS_NO_SUCH_FILE;
+            Irp->IoStatus.Information = 0;
+
+            return STATUS_NO_SUCH_FILE;
+        }
+        else
+        {
+            status = ZwCreateFile(
+                &DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle,
+                GENERIC_READ | GENERIC_WRITE,
+                &object_attributes,
+                &Irp->IoStatus,
+                &mount_information->FileSize,
+                FILE_ATTRIBUTE_NORMAL,
+                0,
+                FILE_OPEN_IF,
+                FILE_NON_DIRECTORY_FILE |
+                FILE_RANDOM_ACCESS |
+                FILE_NO_INTERMEDIATE_BUFFERING |
+                FILE_SYNCHRONOUS_IO_NONALERT,
+                NULL,
+                0
+                );
+
+            if (!NT_SUCCESS(status))
+            {
+                InterlockedDecrement(&CtrlDevObjExt->union_special_dev_ext.ctrl_dev_ext.number_of_device);
+
+                FileDiskDeleteDevice(DataDevObj);
+
+                ExFreePool(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer);
+                RtlFreeUnicodeString(&ufile_name);
+                return status;
+            }
+
+            if (Irp->IoStatus.Information == FILE_CREATED)
+            {
+                file_eof.EndOfFile.QuadPart = mount_information->FileSize.QuadPart;
+
+                status = ZwSetInformationFile(
+                    DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle,
+                    &Irp->IoStatus,
+                    &file_eof,
+                    sizeof(FILE_END_OF_FILE_INFORMATION),
+                    FileEndOfFileInformation
+                    );
+
+                if (!NT_SUCCESS(status))
+                {
+                    InterlockedDecrement(&CtrlDevObjExt->union_special_dev_ext.ctrl_dev_ext.number_of_device);
+
+                    FileDiskDeleteDevice(DataDevObj);
+
+                    ExFreePool(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer);
+
+                    RtlFreeUnicodeString(&ufile_name);
+
+                    ZwClose(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle);
+
+                    return status;
+                }
+            }
+        }
+    }
+    else if (!NT_SUCCESS(status))
+    {
+        InterlockedDecrement(&CtrlDevObjExt->union_special_dev_ext.ctrl_dev_ext.number_of_device);
+
+        FileDiskDeleteDevice(DataDevObj);
+
+        ExFreePool(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer);
+
+        RtlFreeUnicodeString(&ufile_name);
+
+        return status;
+    }
+
+    RtlFreeUnicodeString(&ufile_name);
+
+    status = ZwQueryInformationFile(
+        DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle,
+        &Irp->IoStatus,
+        &file_basic,
+        sizeof(FILE_BASIC_INFORMATION),
+        FileBasicInformation
+        );
+
+    if (!NT_SUCCESS(status))
+    {
+        InterlockedDecrement(&CtrlDevObjExt->union_special_dev_ext.ctrl_dev_ext.number_of_device);
+
+        FileDiskDeleteDevice(DataDevObj);
+
+        ExFreePool(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer);
+
+        ZwClose(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle);
+
+        return status;
+    }
+
+    status = ZwQueryInformationFile(
+        DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle,
+        &Irp->IoStatus,
+        &file_standard,
+        sizeof(FILE_STANDARD_INFORMATION),
+        FileStandardInformation
+        );
+
+    if (!NT_SUCCESS(status))
+    {
+        InterlockedDecrement(&CtrlDevObjExt->union_special_dev_ext.ctrl_dev_ext.number_of_device);
+
+        FileDiskDeleteDevice(DataDevObj);
+
+        ExFreePool(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer);
+
+        ZwClose(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle);
+
+        return status;
+    }
+
+    DataDevObjExt->union_special_dev_ext.data_dev_ext.file_size.QuadPart = file_standard.EndOfFile.QuadPart;
+
+    status = ZwQueryInformationFile(
+        DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle,
+        &Irp->IoStatus,
+        &file_alignment,
+        sizeof(FILE_ALIGNMENT_INFORMATION),
+        FileAlignmentInformation
+        );
+
+    if (!NT_SUCCESS(status))
+    {
+        InterlockedDecrement(&CtrlDevObjExt->union_special_dev_ext.ctrl_dev_ext.number_of_device);
+
+        FileDiskDeleteDevice(DataDevObj);
+
+        ExFreePool(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_name.Buffer);
+
+        ZwClose(DataDevObjExt->union_special_dev_ext.data_dev_ext.file_handle);
+
+        return status;
+    }
+
+    DataDevObj->AlignmentRequirement = file_alignment.AlignmentRequirement;
+
+    if (DataDevObjExt->union_special_dev_ext.data_dev_ext.read_only)
+    {
+        DataDevObj->Characteristics |= FILE_READ_ONLY_DEVICE;
+    }
+    else
+    {
+        DataDevObj->Characteristics &= ~FILE_READ_ONLY_DEVICE;
+    }
+
+    DataDevObjExt->union_special_dev_ext.data_dev_ext.media_in_device = TRUE;
+
+    DbgPrint("DataDevObj->AlignmentRequirement : %lu\n",DataDevObj->AlignmentRequirement);

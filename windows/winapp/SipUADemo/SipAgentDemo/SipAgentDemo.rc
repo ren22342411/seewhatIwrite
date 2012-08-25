@@ -1,0 +1,208 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SipAgentDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 247, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SipAgentDemo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDI_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "SipAgentDemo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008 Alex Zhu. All Rights Reserved.",
+                    IDC_STATIC,24,46,203,15
+    DEFPUSHBUTTON   "确定",IDOK,175,1,50,14,WS_GROUP
+END
+
+IDD_SIPAGENTDEMO_DIALOG DIALOGEX 0, 0, 434, 294
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SipAgentDemo"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "Register",IDC_STATIC,12,9,375,96
+    EDITTEXT        IDC_EDIT_PROXY,109,19,169,19,ES_AUTOHSCROLL
+    LTEXT           "Register Server:",IDC_STATIC,21,25,86,18
+    EDITTEXT        IDC_EDIT_USERNAME,109,47,171,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,110,71,172,14,ES_AUTOHSCROLL
+    LTEXT           "User Name:",IDC_STATIC,21,45,86,18
+    LTEXT           "Password:",IDC_STATIC,21,71,86,18
+    PUSHBUTTON      "Register",IDC_BUTTON_REGISTER,313,74,50,14
+    GROUPBOX        "Make Call",IDC_STATIC,15,127,372,68
+    LTEXT           "Input Number:",IDC_STATIC,24,148,75,15
+    EDITTEXT        IDC_EDIT_CALLNUMBER,113,144,187,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Call",IDC_BUTTON_MAKECALL,191,171,50,14
+    GROUPBOX        "Status",IDC_STATIC,15,208,375,43
+    LTEXT           "Static",IDC_STATIC_STATUS,25,222,356,18
+    PUSHBUTTON      "HungUp",IDC_BUTTON_HUNGUP,303,170,50,14
+    PUSHBUTTON      "Answer",IDC_BUTTON_ANSWER,249,171,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "This is a sip UA demo, tell you how to use ppsip to build a sip UA in 1 minute.\0"
+            VALUE "CompanyName", "rectsoft\0"
+            VALUE "FileDescription", "SipAgentDemo (using ppsip)\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SipAgentDemo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008 , rectsoft inc.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SipAgentDemo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SipAgentDemo \0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "About SipAgentDemo(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINFRAME           ICON    DISCARDABLE     "res\\Alex.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SipAgentDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

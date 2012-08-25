@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TJOJ-10002-The Tower of Hanoi", "TJOJ-10002-The Tower of Hanoi\TJOJ-10002-The Tower of Hanoi.vcproj", "{12134BBD-5C1E-4ED2-8C6B-76A215942070}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12134BBD-5C1E-4ED2-8C6B-76A215942070}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12134BBD-5C1E-4ED2-8C6B-76A215942070}.Debug|Win32.Build.0 = Debug|Win32
+		{12134BBD-5C1E-4ED2-8C6B-76A215942070}.Release|Win32.ActiveCfg = Release|Win32
+		{12134BBD-5C1E-4ED2-8C6B-76A215942070}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

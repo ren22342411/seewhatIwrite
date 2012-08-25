@@ -1,0 +1,120 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_NPSM           ICON                    "icon_npsm.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "&NaturePark"
+    BEGIN
+        MENUITEM "新游戏(&New Game)",              ID_NATUREPARK_NEWGAME
+        MENUITEM "保存游戏(&Save Game)",            ID_NATUREPARK_SAVEGAME
+        MENUITEM "载入游戏(Loa&d Game)",            ID_NATUREPARK_LOADGAME
+        MENUITEM SEPARATOR
+        MENUITEM "退出游戏(E&xit)",                 ID_NATUREPARK_EXIT
+    END
+    POPUP "游戏设定(&Settings)"
+    BEGIN
+        MENUITEM "高分排行(Score&Rank)",            ID_SET_SCORERANK
+        MENUITEM "清除排行(&DelRank)",              ID_SET_DELRANK
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "游戏介绍(&Intro...)",             ID_HELP_INTRO
+        MENUITEM "游戏帮助(&Help)",                 ID_HELP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "关于(&About)",                  ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 137, 56
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    ICON            IDI_ICON_NPSM,IDC_MYICON,14,9,20,20
+    LTEXT           "Nature Park Version 1.0",IDC_STATIC,45,10,83,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,53,33,63,8
+    DEFPUSHBUTTON   "OK",IDOK,7,30,30,11,WS_GROUP
+    LTEXT           "Designed by RenRen",IDC_STATIC,48,21,71,8
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

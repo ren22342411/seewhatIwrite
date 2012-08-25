@@ -1,0 +1,4 @@
+EXPORTS
+;dll export functions
+	CallBackKeyMsgProc
+	CallBackMouseMsgProc

@@ -1,0 +1,6 @@
+; MyMFCDll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "MyMFCDll"
+
+EXPORTS
+    ; Explicit exports can go here

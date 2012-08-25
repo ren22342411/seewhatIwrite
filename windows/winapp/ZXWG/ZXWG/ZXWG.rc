@@ -1,0 +1,171 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ZXWG                ICON                    "ZXWG.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_ZXWG MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+    POPUP "Op"
+    BEGIN
+        MENUITEM "Start",                       ID_OP_START
+        MENUITEM "OpenProcess",                 ID_OP_OPENPROCESS
+        MENUITEM "GetPixel",                    ID_OP_GETPIXEL
+        MENUITEM "GetMainPixel",                ID_OP_GETMAINPIXEL
+        MENUITEM "GetWillDiePixel",             ID_OP_GETWILLDIEPIXEL
+        MENUITEM "GetPlayerInfoPixel",          ID_OP_GETPLAYERINFOPIXEL
+        MENUITEM "GetPlayerHP",                 ID_OP_GETPLAYERHP
+        MENUITEM "GetPlayerMP",                 ID_OP_GETPLAYERMP
+        MENUITEM "GetPlayerHPMP",               ID_OP_GETPLAYERHPMP
+        MENUITEM "GetPlayerHpMpArray",          ID_OP_GETPLAYERHPMPARRAY
+    END
+    POPUP "TestMR"
+    BEGIN
+        MENUITEM "isSeeingMonster",             ID_TESTMR_ISSEEINGMONSTER
+        MENUITEM "isMonster",                   ID_TESTMR_ISMONSTER
+        MENUITEM "isMonsterFullHP",             ID_TESTMR_ISMONSTERFULLHP
+        MENUITEM "willMonsterDie",              ID_TESTMR_WILLMONSTERDIE
+        MENUITEM "isMonsterDead",               ID_TESTMR_ISMONSTERDEAD
+    END
+    POPUP "TestPR"
+    BEGIN
+        MENUITEM "isFightingNow",               ID_TESTPR_ISFIGHTINGNOW
+        MENUITEM "getPlayerHpNumNotFighting",   ID_TESTPR_GETPLAYERHPNUMNOTFIGHTING
+        MENUITEM "getPlayerMpNumNotFighting",   ID_TESTPR_GETPLAYERMPNUMNOTFIGHTING
+        MENUITEM "getPlayerHpNumWhenFighting",  ID_TESTPR_GETPLAYERHPNUMWHENFIGHTING
+        MENUITEM "getPlayerMpNumWhenFighting",  ID_TESTPR_GETPLAYERMPNUMWHENFIGHTING
+        MENUITEM "getPlayerHpPercentage",       ID_TESTPR_GETPLAYERHPPERCENTAGE
+        MENUITEM "getPlayerMpPercentage",       ID_TESTPR_GETPLAYERMPPERCENTAGE
+    END
+    POPUP "TestWG"
+    BEGIN
+        MENUITEM "Begin",                       ID_TESTWG_BEGIN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_ZXWG ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  22, 17, 230, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_ZXWG,IDC_MYICON,14,9,16,16
+    LTEXT           "ZXWG Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "ZXWG"
+    IDC_ZXWG                "ZXWG"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

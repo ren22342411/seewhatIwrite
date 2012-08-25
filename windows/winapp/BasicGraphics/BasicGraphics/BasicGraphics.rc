@@ -1,0 +1,255 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_BASICGRAPHICS       ICON                    "BasicGraphics.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_BASICGRAPHICS MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_FILE_NEW
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "&Load",                       ID_FILE_LOAD
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Draw&Line",                   ID_EDIT_DRAWLINE
+        MENUITEM "DrawC&ircle",                 ID_EDIT_DRAWCIRCLE
+        MENUITEM "Draw&Rectangular",            ID_EDIT_DRAWRECTANGULAR
+        MENUITEM "Draw&Polygon",                ID_EDIT_DRAWPOLYGON
+        MENUITEM "Draw&Text",                   ID_EDIT_DRAWTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Change&Color",                ID_EDIT_CHANGECOLOR
+        MENUITEM "ChangeLineSt&yle",            ID_EDIT_CHANGELINESTYLE
+        MENUITEM "ChangeText&Font",             ID_EDIT_CHANGETEXTFONT
+        MENUITEM SEPARATOR
+        MENUITEM "ZoomOut/ZoomIn",              ID_EDIT_ZOOMOUT_ZOOMIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Select",                     ID_EDIT_SELECT
+        MENUITEM "&Delete",                     ID_EDIT_DELETE
+        MENUITEM "Delete&All",                  ID_EDIT_DELETEALL
+    END
+    POPUP "&Config"
+    BEGIN
+        MENUITEM "SetDefault&Color",            ID_CONFIG_SETDEFAULTCOLOR
+        MENUITEM "SetDefaultLineSt&yle",        ID_CONFIG_SETDEFAULTLINESTYLE
+        MENUITEM "SetDefaultText&Font",         ID_CONFIG_SETDEFAULTTEXTFONT
+        MENUITEM "SetSelecting&Sensitivity",    ID_CONFIG_SETSELECTINGSENSITIVITY
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About BasicGraphics",        IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_BASICGRAPHICS ACCELERATORS 
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  20, 20, 230, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_BASICGRAPHICS,IDC_MYICON,14,9,16,16
+    LTEXT           "BasicGraphics Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "BasicGraphics"
+    IDC_BASICGRAPHICS       "BASICGRAPHICS"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_SMALL DIALOGEX 50, 50, 160, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION
+CAPTION "Input Text"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "OK",IDC_BUTTON1,35,30,35,15
+    PUSHBUTTON      "Cancel",IDC_BUTTON2,90,30,35,15
+    EDITTEXT        IDC_EDIT1,5,5,150,20,ES_AUTOHSCROLL
+END
+
+IDD_PROPPAGE_SMALL1 DIALOGEX 50, 50, 190, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION
+CAPTION "Selecting Sensitivity"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Low",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,15,21,29,10
+    CONTROL         "Middle",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,77,21,36,10
+    CONTROL         "High",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,146,21,30,10
+    PUSHBUTTON      "OK",IDC_BUTTON1,33,49,50,14
+    PUSHBUTTON      "Cancle",IDC_BUTTON2,103,49,50,14
+    GROUPBOX        "Seneitivity",IDC_STATIC,6,4,178,41
+END
+
+IDD_PROPPAGE_SMALL2 DIALOGEX 50, 50, 206, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION
+CAPTION "Select Pen Style"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Pen Style",IDC_STATIC,17,19,163,135
+    CONTROL         "",IDC_RADIO_SOLID,"Button",BS_AUTORADIOBUTTON | BS_BITMAP,43,40,10,11
+    CONTROL         "",IDC_RADIO_DASH,"Button",BS_AUTORADIOBUTTON | BS_BITMAP,43,60,10,10
+    CONTROL         "",IDC_RADIO_DOT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP,43,80,9,10
+    CONTROL         "",IDC_RADIO_DASHDOT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP,43,100,9,10
+    CONTROL         "",IDC_RADIO_DASHDOTDOT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP,43,120,10,10
+    PUSHBUTTON      "OK",IDC_BUTTON1,39,164,50,14
+    PUSHBUTTON      "Cancel",IDC_BUTTON2,112,164,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROPPAGE_SMALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_SMALL1, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 184
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_PROPPAGE_SMALL2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

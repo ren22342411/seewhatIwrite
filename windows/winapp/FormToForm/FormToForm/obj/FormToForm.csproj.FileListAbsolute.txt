@@ -1,0 +1,9 @@
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\bin\Debug\FormToForm.exe
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\bin\Debug\FormToForm.pdb
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\obj\Debug\FormToForm.Form1.resources
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\obj\Debug\FormToForm.Form2.resources
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\obj\Debug\FormToForm.Properties.Resources.resources
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\obj\Debug\FormToForm.csproj.GenerateResource.Cache
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\obj\Debug\FormToForm.exe
+C:\Documents and Settings\任仁\My Documents\Visual Studio 2005\Projects\FormToForm\FormToForm\obj\Debug\FormToForm.pdb

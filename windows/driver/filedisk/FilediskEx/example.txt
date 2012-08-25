@@ -1,6 +1,6 @@
 C:\>filedisk
 syntax:
-filedisk /mount  <devicenumber> <filename> [size[k|M|G] | /ro | /cd] <drive:>
+filedisk /mount  <filename> [size[k|M|G] | /ro | /cd] <drive:>
 filedisk /umount <drive:>
 filedisk /status <drive:>
 
@@ -10,8 +10,8 @@ filename formats:
   \\server\share\path\filedisk.img
 
 example:
-filedisk /mount  0 c:\temp\filedisk.img 8M f:
-filedisk /mount  1 c:\temp\cdimage.iso /cd i:
+filedisk /mount  c:\temp\filedisk.img 8M f:
+filedisk /mount  c:\temp\cdimage.iso /cd i:
 filedisk /umount f:
 filedisk /umount i:
 
@@ -29,11 +29,11 @@ Initializing the File Allocation Table (FAT)...
 Volume label (11 characters, ENTER for none)? filedisk
 Format complete.
 
-    8 353 792 bytes total disk space.
-    8 353 792 bytes available on disk.
+    8?53?92 bytes total disk space.
+    8?53?92 bytes available on disk.
 
-        2 048 bytes in each allocation unit.
-        4 079 allocation units available on disk.
+        2?48 bytes in each allocation unit.
+        4?79 allocation units available on disk.
 
            12 bits in each FAT entry.
 
@@ -55,12 +55,12 @@ Windows is verifying files and folders...
 File and folder verification is complete.
 Windows has checked the file system and found no problems.
 
-    8 353 792 bytes total disk space.
-    8 353 792 bytes available on disk.
+    8?53?92 bytes total disk space.
+    8?53?92 bytes available on disk.
 
-        2 048 bytes in each allocation unit.
-        4 079 total allocation units on disk.
-        4 079 allocation units available on disk.
+        2?48 bytes in each allocation unit.
+        4?79 total allocation units on disk.
+        4?79 allocation units available on disk.
 
 C:\>filedisk /status f:
 f: \??\c:\temp\filedisk.img Size: 8388608 bytes
